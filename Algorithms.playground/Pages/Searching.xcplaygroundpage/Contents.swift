@@ -41,6 +41,7 @@ extension Array where Element: Comparable {
     /// - Parameters:
     ///   - value: Value to search for
     ///   - range: Range of self to search within
+    /// - Requires: Sorted array
     /// - Returns: Index if `value` was found, otherwise `nil`
     func binarySearchRecursively(_ value: Element, range: Range<Int>) -> Int? {
         guard range.lowerBound < range.upperBound else { return nil }
@@ -59,6 +60,7 @@ extension Array where Element: Comparable {
     ///
     /// - Parameters:
     ///   - value: Value to search for
+    /// - Requires: Sorted array
     /// - Returns: Index if `value` was found, otherwise `nil`
     func binarySearchIteratively(_ value: Element) -> Int? {
         var lower = 0
