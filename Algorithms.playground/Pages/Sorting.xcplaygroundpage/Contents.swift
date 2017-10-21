@@ -4,7 +4,6 @@ import Foundation
 let randomArray = randomIntArray(100)
 
 run(.sorted) {
-    // Source: https://github.com/apple/swift/blob/6c7d93491fe2bf42553fbccff529aeddc938796c/stdlib/public/core/CollectionAlgorithms.swift.gyb
     let array = randomArray
     array.sorted()
     array.sorted(by: >)
